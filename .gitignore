@@ -17,15 +17,29 @@ out/
 # Tailwind CSS build cache
 *.css.map
 
+# TypeScript
+*.tsbuildinfo
+.tsbuildinfo
+
 # ----------------------
 # Backend
 # ----------------------
 backend/tmp/
 backend/logs/
 *.log
+logs/
+tmp/
 
 # PDF / Exported files
 *.pdf
+
+# Build artifacts
+dist/
+build/
+
+# Coverage reports
+coverage/
+*.lcov
 
 # ----------------------
 # Docker
@@ -47,9 +61,14 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
+.env.test
 
 # ----------------------
 # Misc
 # ----------------------
 *.swp
 *.swo
+*.tmp
+*.temp

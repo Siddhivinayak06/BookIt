@@ -1,0 +1,55 @@
+# ----------------------
+# Node.js & Next.js
+# ----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log
+
+# Next.js build output
+.next/
+out/
+.vercel/
+
+# Tailwind CSS build cache
+*.css.map
+
+# ----------------------
+# Backend
+# ----------------------
+backend/tmp/
+backend/logs/
+*.log
+
+# PDF / Exported files
+*.pdf
+
+# ----------------------
+# Docker
+# ----------------------
+.docker/
+.dockerignore
+
+# ----------------------
+# OS & Editor files
+# ----------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ----------------------
+# Environment & Secrets
+# ----------------------
+.env
+.env.local
+.env.*.local
+
+# ----------------------
+# Misc
+# ----------------------
+*.swp
+*.swo

@@ -52,7 +52,7 @@ export default function ExperienceClient({ id }: { id: string }) {
         // set default selected date to earliest slot date
         const dates = (payload.slots || []).map((s: SlotRow) => s.slot_at.slice(0, 10))
         const uniq = Array.from(new Set(dates))
-        if (uniq.length) setSelectedDate(uniq[0])
+        if (uniq.length) setSelectedDate(String(uniq[0]))
       } catch (err: any) {
         console.error('Error loading experience', err)
         if (mounted) setError(err.message ?? 'Failed to load')
